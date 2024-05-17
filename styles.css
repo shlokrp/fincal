@@ -62,10 +62,36 @@ button:hover {
     display: none;
 }
 
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pie-chart {
     margin: 20px auto;
     width: 300px; /* Reduced pie chart size */
     height: 300px; /* Reduced pie chart size */
+}
+
+.labels {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 16px;
+    text-align: center;
+}
+
+.fixed-income-label {
+    color: #FF6384; /* Red color for fixed income label */
+}
+
+.equity-label {
+    color: #36A2EB; /* Blue color for equity label */
 }
 
 .final-result {
@@ -76,4 +102,31 @@ button:hover {
     font-size: 24px;
     text-align: center;
     border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 10px;
+    }
+    
+    .input-group label {
+        font-size: 16px;
+    }
+
+    .input-group input, .input-group select {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .pie-chart {
+        width: 250px;
+        height: 250px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Finance Calculator</h1>
+        
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <select id="age" name="age">
+                <option value="<30">&lt;30 yrs</option>
+                <option value="30-40">30-40 yrs</option>
+                <option value="40-50">40-50 yrs</option>
+                <option value="50-60">50-60 yrs</option>
+                <option value=">60">60&gt; yrs</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="corpus">Corpus (in ₹):</label>
+            <input type="number" id="corpus" name="corpus" required>
+        </div>
+
+        <div class="input-group">
+            <label for="risk">Risk:</label>
+            <select id="risk" name="risk">
+                <option value="Very Conservative">Very Conservative</option>
+                <option value="Conservative">Conservative</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Aggressive">Aggressive</option>
+                <option value="Very Aggressive">Very Aggressive</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="time">Time (years):</label>
+            <input type="number" id="time" name="time" min="1" required>
+        </div>
+
+        <button id="calculate-btn">Calculate</button>
+    </div>
+
+    <div id="result" class="result hidden">
+        <div class="pie-chart">
+            <canvas id="pie-chart"></canvas>
+        </div>
+        <div class="final-result">
+            <div id="final-amount"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

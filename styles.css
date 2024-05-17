@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Beige background */
+    color: #333;
+    font-size: 18px; /* Increased font size */
+}
+
+.calculator {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make menu options bold */
+    font-size: 20px; /* Increased font size of menu options */
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size of input fields */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text for the button */
+    font-size: 20px; /* Increased font size of button text */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.pie-chart {
+    margin: 20px auto;
+    width: 300px; /* Reduced pie chart size */
+    height: 300px; /* Reduced pie chart size */
+}
+
+.final-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+}

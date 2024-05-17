@@ -116,7 +116,15 @@ button:hover {
     .input-group input, .input-group select {
         font-size: 16px;
     }
+    .labels {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
     button {
         font-size: 18px;
     }
@@ -124,9 +132,5 @@ button:hover {
     .pie-chart {
         width: 250px;
         height: 250px;
-    }
-
-    .label {
-        font-size: 14px;
     }
 }
